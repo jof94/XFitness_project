@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="css/bridge.css">
+</head>
+<body>
+	<div class="container-fluid wrapper">
+		<header class="row">
+			<div class="col-lg-6">
+				<img src="images/logo_xfitness.png" alt="Logo Xfitness" id="xfitnessLogo">
+			</div>
+			<div class="col-lg-6" id="socialNetworks">
+				<a href="#" id="faceIcon"><img src="images/icon_face.png" alt="Facebook icon"></a>
+				<a href="#"><img src="images/icon_rss.png" alt="Rss icon"></a>
+				<a href="#"><img src="images/icon_twitter.png" alt="Twitter icon"></a>
+				<a href="#"><img src="images/icon_google.png" alt="Goggle+ icon"></a>
+			</div>
+		</header>
+				<!-- End Header -->
+		<nav class="row">
+			<ul>
+				<li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Training</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="contact.html">Find Us</a></li>
+			</ul>
+		</nav>
+			<!-- End Navigation -->
+		<div class="row">
+			<div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
+				<!-- Find us -->
+				<section class="col-xs-12 col-md-5 infoContainer">
+					<h2>Find <br><span><b>Us</b></span></h2>
+					<p class="information">
+						Marmora Road,<br>
+						Glagow, D04 89GR.<br>
+						Freephone:	+1 800 559 6580<br>
+						Telephone:	+1 800 603 6035<br>
+						Fax:	+1 800 889 9898<br>
+						E-mail: mail@demolink.org
+					</p>
+				</section>
+
+				<!-- Form -->
+				<section class="formContainer col-xs-12 col-md-7">
+					<h2>
+						Get in<br><span><b>Touch</b></span>
+					</h2>
+					<form action="php/send.php" class="form-horizontal" role="form" method="POST">
+						<!-- Main Info -->
+						<div class="form-group col-xs-12 col-md-8">
+							<input type="text" class="form-control mainInfo" name="name" placeholder="Name:" required>
+							<input type="mail" class="form-control mainInfo" name="email" placeholder="Email:" required>
+							<input type="text" class="form-control mainInfo" name="phone" placeholder="Phone:" required>
+						</div>
+						<!-- Text -->
+						<div class="form-group col-xs-12">
+							<textarea class="col-xs-12" name="message" name="message" rows="12" placeholder="Message:" required></textarea>
+						</div>
+						<!-- Buttons -->
+						<div class="form-group col-xs-12 buttons">
+							<input type="reset" value="CLEAR" name="clear" class="btn btn-lg btn-form">
+							<input type="submit" value="SEND" name="submit" class="btn btn-lg btn-form">
+						</div>
+					</form>
+				</section>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
