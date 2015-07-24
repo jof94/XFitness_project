@@ -1,0 +1,74 @@
+//Variables
+$body-color: #eeeeee;
+$main-text-color: #333745;
+$span-color: #ff7f66;
+$info-color: #aaaaaa;
+$input-color: #f0f0f0;
+$gradient1: #ff9d7e;
+$gradient2: #ff775f;
+
+/* body */
+body{
+	background-color: $body-color;
+}
+/* Find us section */
+h2{
+	color: $main-text-color;
+	font-weight: lighter;
+
+	span{
+		color: $span-color;
+	}
+}
+.information{
+	color: $info-color;
+	margin-top: 307px;
+}
+/* Form section */
+.mainInfo{
+	margin: 1.25rem 0;
+	border-radius: 0;
+	background-color: $input-color;
+	&:focus{
+		border: 0;
+		box-shadow: 0 0 0.625rem $span-color;
+	}
+}
+textarea{
+	background-color: $input-color;
+	resize: none;
+	border: 1px solid #dbdbdb;
+	&:focus{
+		border: 0;
+		box-shadow: 0 0 0.625rem $span-color;
+	}
+}
+.btn-form{
+	color: #fff;
+	background: $span-color;
+	background: -moz-linear-gradient(top, $gradient1 0%, $gradient2 100%);
+	background: -webkit-linear-gradient(top, $gradient1 0%, $gradient2 100%);
+	background: -o-linear-gradient(top, $gradient1 0%, $gradient2 100%);
+	background: -ms-linear-gradient(top, $gradient1 0%, $gradient2 100%);
+	background: linear-gradient(to bottom, $gradient1 0%, $gradient2 100%);
+	border-radius: 0;
+	border: 0.0625rem solid $span-color;
+	transition: all ease 0.5s;
+	&:hover{
+		background: $body-color;
+		color: $span-color;
+		border: 0.0625rem solid $span-color;
+	}
+}
+.buttons{
+	float: right
+}
+
+/*=====================================
+=            Media Queries            =
+=====================================*/
+@media all and (max-width: 61.9375rem){
+	.information{
+		margin-top: 0;
+	}
+}

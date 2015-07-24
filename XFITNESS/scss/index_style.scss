@@ -1,0 +1,118 @@
+$body-background: #eeeeee;
+$salmon-1: #fe8e71;
+$salmon-2: #fe7b66;
+$salmon-3: #fb6f57;
+$salmon-border: #fc6847;
+$red: red;
+@mixin box(){
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@mixin round($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+body{
+	background: $body-background;
+}
+.wrapper{
+	width: 100%;
+	padding: 40px;
+}
+header{
+	height: 70px;
+	@box;
+}
+	#xfitnessLogo{
+		width: 350px;
+	}
+	#socialNetworks{
+		heignt: 100%;
+		margin-top: 20px;
+	}
+		#faceIcon{
+			margin-left: 425px;
+		}
+									/* /////////////// End Header /////////////// */
+nav{
+	margin-top: 80px;
+	height: 60px;
+}
+	nav ul{
+		height: 100%;
+		background: -moz-linear-gradient($salmon-1, $salmon-2);
+		padding: 0;
+		border: 2px solid $salmon-border;
+	}
+		nav ul li{
+			list-style: none;
+			display: inline-block;
+			width: 18.49%;
+			height: 100%;
+			text-align: center;
+			border-right: 2px solid $salmon-border;
+			&:hover{
+				background: $salmon-3;
+			}
+		}
+		nav ul li:first-child{
+			width: 6%;
+			background: $salmon-3;
+		}
+		nav ul li:last-child{
+			border: none;
+		}
+			nav ul li a{
+				width: 100%;
+				height: 100%;
+				padding-top: 12px;
+				display: block;
+				color: white;
+				font-size: 2.5rem;
+			}
+			a:hover, a:active, a:visited, a:link{
+				color: white;
+				text-decoration: none;
+			}
+									/* /////////////// End Navigation /////////////// */
+#addSection{
+	margin-top: 10px;
+}
+#addSection img{
+	width: 100%;
+}
+									/* /////////////// End Add Section /////////////// */
+#serviceSection{
+	height: 250px;
+	background: white;
+	margin-top: 10px;
+}
+	#serviceSection article{
+		height: 100%;
+		padding: 10px;
+		@include box();
+	}
+	#serviceSection img{
+		width: 30%;
+		@include round(200px);
+		margin-top: 50px;
+	}
+	#serviceSection .text{
+		width: 60%;
+		float: right;
+	}
+									/* /////////////// End Service Section /////////////// */
+#title{
+	float: left;
+}
+#viewMore{
+	float: right;
+}
+#galleryImg{
+	width: 100%;
+}
